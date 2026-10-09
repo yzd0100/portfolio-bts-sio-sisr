@@ -1,417 +1,146 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio BTS SIO SISR — Driss Bahammou</title>
-<meta name="description" content="Portfolio de Driss Bahammou, étudiant en BTS SIO option SISR.">
-<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prénom Nom – Portfolio BTS SIO SISR</title>
+<meta name="description" content="Portfolio d'un étudiant en BTS SIO option SISR, orienté cybersécurité.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===== Barre de navigation ===== -->
-<header class="topbar" id="topbar">
-  <div class="topbar-inner">
-    <a href="#home" class="logo">D.BAHAMMOU</a>
-    <nav class="menu" id="menu" aria-label="Navigation principale">
-      <a href="#home">Accueil</a>
-      <a href="#about">À propos</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#stage">Stage</a>
-      <a href="#projects">Projets</a>
-      <a href="#veille">Veille</a>
-      <a href="#epreuves">E5 / E6</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="topbar-actions">
-      <button class="icon-btn" id="themeToggle" aria-label="Changer de thème">◐</button>
-      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    </div>
-  </div>
+<!-- NAVIGATION : modifie les liens/ids ici si tu ajoutes une rubrique -->
+<header class="nav">
+  <a class="logo" href="#accueil">P.Nom</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  <nav id="menu">
+    <a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#projets">Projets</a>
+    <a href="#veille">Veille</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
-
-<!-- ===== ACCUEIL ===== -->
-<section id="home" class="hero">
-  <div class="container hero-inner">
-    <p class="hero-kicker">Bienvenue sur mon portfolio</p>
-    <h1>Driss Bahammou</h1>
-    <p class="hero-role">Étudiant en BTS SIO — option SISR</p>
-    <p class="hero-pitch">
-      Passionné par les infrastructures, les réseaux et la cybersécurité, je vise une Licence Pro
-      Systèmes, Réseaux et Sécurité puis un Master Cybersécurité, en alternance.
-    </p>
-    <div class="hero-buttons">
-      <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
-      <a href="#projects" class="btn btn-light">Mes projets</a>
-      <a href="#contact" class="btn btn-outline">Me contacter</a>
+<!-- 1. ACCUEIL -->
+<section id="accueil" class="hero">
+  <div class="hero-text">
+    <p class="kicker">BTS SIO option SISR</p>
+    <h1>Je conçois et sécurise des infrastructures réseau.</h1>
+    <p>Étudiant en deuxième année, je m'oriente vers la cybersécurité : durcissement des systèmes, segmentation réseau et supervision. Lorem ipsum à remplacer par ta présentation.</p>
+    <div class="actions">
+      <a class="btn" href="#projets">Voir mes projets</a>
+      <a class="btn ghost" href="#contact">Me contacter</a>
     </div>
+  </div>
+  <!-- Schéma réseau décoratif (SVG) : élément visuel signature -->
+  <svg class="topo" viewBox="0 0 320 260" role="img" aria-label="Schéma d'un réseau : routeur, commutateur et postes">
+    <g class="links"><path d="M160 40V100M160 100L70 170M160 100L160 170M160 100L250 170M70 170V220M160 170V220M250 170V220"/></g>
+    <g class="nodes">
+      <rect x="130" y="10" width="60" height="30" rx="6"/><text x="160" y="30">Routeur</text>
+      <rect x="125" y="85" width="70" height="30" rx="6"/><text x="160" y="105">Switch</text>
+      <rect x="40" y="155" width="60" height="30" rx="6"/><text x="70" y="175">VLAN 100</text>
+      <rect x="130" y="155" width="60" height="30" rx="6"/><text x="160" y="175">VLAN 200</text>
+      <rect x="220" y="155" width="60" height="30" rx="6"/><text x="250" y="175">VLAN 300</text>
+      <circle cx="70" cy="230" r="10"/><circle cx="160" cy="230" r="10"/><circle cx="250" cy="230" r="10"/>
+    </g>
+  </svg>
+</section>
+
+<!-- 2. À PROPOS -->
+<section id="apropos">
+  <h2>À propos</h2>
+  <div class="two">
+    <p>Après un baccalauréat [à préciser], j'ai intégré le BTS SIO pour allier administration systèmes et réseaux. Lorem ipsum dolor sit amet, consectetur adipiscing elit : décris ici ton parcours, tes stages et ta motivation.</p>
+    <ul class="plain">
+      <li><i class="fa-solid fa-graduation-cap"></i> BTS SIO SISR – Lycée [Nom], 2024-2026</li>
+      <li><i class="fa-solid fa-bullseye"></i> Objectif : poursuivre vers un titre ou une licence en cybersécurité</li>
+      <li><i class="fa-solid fa-heart"></i> Centres d'intérêt : CTF, homelab, randonnée, photographie</li>
+    </ul>
   </div>
 </section>
 
-<!-- ===== À PROPOS ===== -->
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title">À propos de moi</h2>
-
-    <div class="about-layout">
-      <div class="about-text">
-        <h3>Driss Bahammou</h3>
-        <p>
-          Étudiant en 2<sup>e</sup> année de BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux),
-          je me spécialise dans l'administration des systèmes, les réseaux et la sécurité informatique.
-        </p>
-        <p>
-          Mon projet : poursuivre en <strong>Licence Professionnelle Systèmes, Réseaux et Sécurité</strong>, puis en
-          <strong>Master Cybersécurité</strong>, le tout en alternance pour allier théorie et pratique.
-        </p>
-        <a href="assets/docs/cv-driss-bahammou.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
-      </div>
-
-      <div class="qualities">
-        <h3>Mes qualités</h3>
-        <!-- À personnaliser : garde celles qui te ressemblent -->
-        <div class="quality"><span class="quality-icon">✎</span><div><h4>Rigoureux</h4><p>Un travail structuré et documenté.</p></div></div>
-        <div class="quality"><span class="quality-icon">⚙</span><div><h4>Persévérant</h4><p>Aller au bout d'un problème technique.</p></div></div>
-        <div class="quality"><span class="quality-icon">⌂</span><div><h4>Autonome</h4><p>Mettre en place des solutions par moi-même.</p></div></div>
-      </div>
-    </div>
-
-    <h3 class="subtitle">Mes compétences</h3>
-    <div class="cards-grid skills">
-      <button class="skill-card" data-title="Active Directory & GPO" data-text="Création de comptes, attribution de groupes et d'unités d'organisation, application et dépannage de GPO (résolution d'un conflit d'héritage en stage). Voir le projet et le stage.">Active Directory<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Windows Server" data-text="Administration courante d'un annuaire Active Directory (ADUC, GPMC) et découverte de la synchronisation avec Microsoft Entra ID en stage.">Windows Server<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Linux" data-text="Utilisation et administration de distributions Linux en ligne de commande. À compléter avec tes distributions et services.">Linux<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="TCP/IP & réseaux" data-text="Adressage IP, VLAN, routage et commutation, diagnostic réseau.">TCP/IP &amp; Réseaux<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Matériel réseau" data-text="Maintenance et sécurisation de switchs, routeurs et câblage. Voir le projet dédié.">Matériel réseau<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Virtualisation" data-text="Création de machines virtuelles pour les labs. À compléter (VirtualBox, VMware, Hyper-V…).">Virtualisation<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Cybersécurité" data-text="Chiffrement des postes avec BitLocker, GPO de sécurité, sensibilisation des salariés (mots de passe, hameçonnage), sécurisation du matériel réseau.">Cybersécurité<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Bases de données" data-text="Requêtes SQL et administration de base. À compléter.">Bases de données (SQL)<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Support & ticketing" data-text="Traitement de tickets Freshdesk de niveau 1, dépannage en présentiel et à distance (TeamViewer), diagnostic et communication avec les utilisateurs.">Support &amp; ticketing<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Postes de travail" data-text="Installation de Windows 11, mises à jour, chiffrement BitLocker, inventaire du parc et rédaction de procédures d'installation.">Postes de travail<span>En savoir plus…</span></button>
-      <button class="skill-card" data-title="Git & GitHub" data-text="Versionnement du code et publication de ce portfolio via GitHub Pages.">Git / GitHub<span>En savoir plus…</span></button>
-    </div>
-
-    <p class="note">Compétences transversales : sens de l'organisation, communication avec des utilisateurs non techniques, prise de parole, rédaction documentaire, travail en équipe.</p>
+<!-- 3. COMPÉTENCES -->
+<section id="competences">
+  <h2>Compétences</h2>
+  <h3>Techniques</h3>
+  <div class="grid" id="tech"></div>
+  <h3>Transversales</h3>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-people-group"></i><h4>Travail en équipe</h4><p>Projets menés en binôme, répartition des tâches.</p></div>
+    <div class="card"><i class="fa-solid fa-diagram-project"></i><h4>Gestion de projet</h4><p>Planification, suivi des tickets, documentation.</p></div>
+    <div class="card"><i class="fa-solid fa-comments"></i><h4>Communication</h4><p>Restitution orale, rédaction de procédures.</p></div>
   </div>
 </section>
 
-<!-- ===== CERTIFICATIONS ===== -->
-<section id="certifications" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Certifications &amp; formations libres</h2>
-    <p class="section-intro">Ajoute ici tes attestations (image ou lien de validation). Exemples à renseigner :</p>
-    <div class="cards-grid certs">
-      <!-- Remplace chaque carte par <img src="assets/img/..."> quand tu as l'attestation -->
-      <article class="cert-card is-empty"><div class="cert-visual">Pix</div><h4>Pix</h4><p>À ajouter</p></article>
-      <article class="cert-card is-empty"><div class="cert-visual">SecNum</div><h4>SecNumacadémie (ANSSI)</h4><p>À ajouter</p></article>
-      <article class="cert-card is-empty"><div class="cert-visual">Cisco</div><h4>Cisco Networking Academy</h4><p>À ajouter</p></article>
-      <article class="cert-card is-empty"><div class="cert-visual">+</div><h4>Autre certification</h4><p>À ajouter</p></article>
-    </div>
-  </div>
+<!-- 4. PROJETS : le contenu est dans script.js (tableau PROJECTS) -->
+<section id="projets">
+  <h2>Expériences et réalisations</h2>
+  <p class="lead">Clique sur une carte pour voir le détail : contexte, difficultés, solutions et compétences.</p>
+  <div class="grid" id="projects"></div>
 </section>
 
-<!-- ===== PARCOURS ===== -->
-<section id="parcours" class="section">
-  <div class="container">
-    <h2 class="section-title">Mon parcours</h2>
-
-    <div class="parcours-grid">
-      <div>
-        <h3 class="subtitle">Formation</h3>
-        <article class="path-card">
-          <div class="path-logo">BTS</div>
-          <div>
-            <h4>BTS SIO — option SISR</h4>
-            <p class="path-meta">2025 – 2027 · Lycée Joseph-Marie Carriat, Bourg-en-Bresse</p>
-            <p>Solutions d'Infrastructure, Systèmes et Réseaux.</p>
-          </div>
-        </article>
-        <article class="path-card path-card--future">
-          <div class="path-logo">LP</div>
-          <div>
-            <h4>Licence Pro Systèmes, Réseaux &amp; Sécurité</h4>
-            <p class="path-meta">Objectif · alternance</p>
-          </div>
-        </article>
-        <article class="path-card path-card--future">
-          <div class="path-logo">M</div>
-          <div>
-            <h4>Master Cybersécurité</h4>
-            <p class="path-meta">Objectif · alternance</p>
-          </div>
-        </article>
-      </div>
-
-      <div>
-        <h3 class="subtitle">Expérience</h3>
-        <article class="path-card">
-          <div class="path-logo">ST</div>
-          <div>
-            <h4>Stage — Support technique &amp; maintien en condition opérationnelle</h4>
-            <p class="path-meta">Neuro Swiss AI, Genève · 14 juin – 14 juillet 2026</p>
-            <p>Support niveau 1, installation et sécurisation de postes, inventaire du parc, administration Active Directory.</p>
-            <a class="link-btn" href="#stage">Voir le détail du stage</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== STAGE ===== -->
-<section id="stage" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Stage en entreprise</h2>
-    <p class="section-intro">Support technique et maintien en condition opérationnelle du parc informatique — BTS SIO 1<sup>re</sup> année, option SISR.</p>
-
-    <div class="stage-overview">
-      <div class="stage-fact"><span>Entreprise</span>Neuro Swiss AI — Genève, Suisse</div>
-      <div class="stage-fact"><span>Période</span>Du 14 juin au 14 juillet 2026 (5 semaines)</div>
-      <div class="stage-fact"><span>Service</span>Informatique interne (équipe de 3 personnes)</div>
-      <div class="stage-fact"><span>Établissement</span>Lycée Joseph-Marie Carriat, Bourg-en-Bresse</div>
-    </div>
-
-    <div class="stage-context">
-      <h3>Contexte</h3>
-      <p>
-        Neuro Swiss AI est une jeune entreprise fondée en 2022 à Genève, spécialisée dans les solutions d'intelligence
-        artificielle pour les entreprises (automatisation, analyse de données, chatbots). J'ai été intégré à son service
-        informatique interne, chargé du maintien en condition opérationnelle du parc, de la gestion des comptes et accès,
-        de la sécurité et du support aux salariés.
-      </p>
-      <h4>Environnement technique</h4>
-      <ul class="tags">
-        <li>Windows 11</li><li>Windows Server</li><li>Active Directory</li><li>Microsoft Entra ID</li>
-        <li>Microsoft 365</li><li>Freshdesk</li><li>BitLocker</li><li>TeamViewer</li><li>VPN d'entreprise</li>
-      </ul>
-    </div>
-
-    <h3 class="subtitle">Mes missions</h3>
-    <p class="hint-text">Clique sur une mission pour voir le détail.</p>
-    <div class="missions">
-      <details class="mission">
-        <summary><span class="mission-title">1. Découverte de l'environnement et prise en main de Freshdesk</span><ul class="tags"><li>Freshdesk</li><li>Microsoft 365</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Comprendre l'organisation du support informatique interne et apprendre à suivre les demandes des salariés avec un outil de tickets.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Prise en main de l'interface (tableau de bord, catégories, niveaux de priorité)</li><li>Observation du traitement de tickets réels avec le technicien support</li><li>Création de tickets de test pour s'entraîner à qualifier les demandes</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Le vocabulaire technique anglophone de l'interface (statuts, tags) demandait un temps d'adaptation. Les tickets réels suivis avec le technicien m'ont permis de m'y habituer rapidement.</p>
-          <h5>Compétences développées</h5><p>Compréhension du cycle de vie d'un ticket, de son ouverture à sa clôture.</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">2. Installation et sécurisation de postes de travail</span><ul class="tags"><li>Windows 11</li><li>BitLocker</li><li>Microsoft Entra ID</li><li>Defender</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Installer et configurer un poste Windows 11 selon la procédure de sécurité de l'entreprise avant sa remise à un nouveau salarié.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Vérification du matériel (RAM, disque) avant installation</li><li>Installation propre de Windows 11 et application des mises à jour</li><li>Création du compte et rattachement à Microsoft Entra ID</li><li>Activation du chiffrement de disque BitLocker</li><li>Installation des logiciels standards et vérification finale</li><li>Observateur sur le premier poste, acteur principal (sous supervision) sur le second</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Sur le premier poste, l'activation de BitLocker a échoué car le module TPM était désactivé dans le BIOS. Après identification du blocage avec mon tuteur, j'ai modifié le paramétrage du BIOS puis relancé le chiffrement. Sur le second poste, l'opération s'est déroulée sans difficulté.</p>
-          <h5>Compétences développées</h5><p>Importance du chiffrement des données et rôle du module TPM dans la sécurisation du démarrage.</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">3. Support utilisateur de niveau 1</span><ul class="tags"><li>Freshdesk</li><li>TeamViewer</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Apporter une réponse rapide et adaptée aux demandes d'assistance de premier niveau.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Résolution de problèmes de connexion à la messagerie</li><li>Dépannage de périphériques non reconnus (imprimante, casque, souris)</li><li>Réinstallation de pilotes défectueux</li><li>Accompagnement à la réinitialisation de mots de passe</li><li>Intervention en présentiel et à distance, avec compte-rendu à la clôture du ticket</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Certains salariés décrivaient leur problème de façon imprécise. J'ai appris à poser les bonnes questions pour identifier rapidement la cause réelle de la panne.</p>
-          <h5>Compétences développées</h5><p>Écoute, diagnostic et communication avec des utilisateurs non techniques.</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">4. Gestion de l'inventaire du parc informatique</span><ul class="tags"><li>Excel</li><li>Étiquetage</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Disposer d'un inventaire fiable et à jour de l'ensemble du matériel de l'entreprise.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Recensement physique des postes fixes, portables et périphériques</li><li>Relevé des numéros de série et des dates d'acquisition</li><li>Mise à jour du fichier de suivi (utilisateur affecté, état, garantie)</li><li>Étiquetage du matériel non identifié</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Certains équipements avaient changé d'utilisateur sans que le service IT soit informé. J'ai effectué des vérifications supplémentaires auprès des salariés concernés pour corriger les données.</p>
-          <h5>Compétences développées</h5><p>Rigueur dans le suivi du patrimoine informatique, anticipation du renouvellement du matériel.</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">5. Sensibilisation des salariés à la sécurité informatique</span><ul class="tags"><li>PowerPoint</li><li>Microsoft 365</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Sensibiliser les salariés aux bonnes pratiques : mots de passe, hameçonnage, mises à jour.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Préparation d'un support de présentation avec mon tuteur</li><li>Présentation orale devant un groupe de salariés, suivie de questions-réponses</li><li>Distribution d'une fiche récapitulative des bonnes pratiques</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Il fallait adapter mon discours à un public non technique, sans vocabulaire trop informatique. J'ai reformulé les notions avec des exemples concrets du quotidien.</p>
-          <h5>Compétences développées</h5><p>Prise de parole en public et vulgarisation de notions de cybersécurité.</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">6. Administration de l'annuaire Active Directory</span><ul class="tags"><li>Active Directory</li><li>GPO</li><li>GPMC</li><li>Entra ID</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Découvrir l'administration d'un annuaire Active Directory : comptes, groupes et stratégies de groupe (GPO).</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Cartographie de l'arborescence AD (unités d'organisation par pôle)</li><li>Création d'un compte de test (OU, groupes de sécurité) sur machine virtuelle, puis sur la production sous supervision</li><li>Création des comptes définitifs des deux nouveaux salariés</li><li>Application d'une GPO de verrouillage automatique de session après 10 minutes d'inactivité sur l'OU Support</li><li>Réinitialisation de mots de passe et déverrouillage de comptes</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>La GPO ne produisait pas l'effet attendu : une autre GPO, appliquée à un niveau supérieur de l'arborescence, était prioritaire et bloquait le paramètre. Avec l'administrateur systèmes, j'ai analysé l'ordre d'application et l'héritage des stratégies pour identifier puis corriger le conflit.</p>
-          <h5>Compétences développées</h5><p>Gestion centralisée des identités et des droits, logique des GPO (priorité, héritage, blocage d'héritage).</p>
-        </div>
-      </details>
-      <details class="mission">
-        <summary><span class="mission-title">7. Rédaction d'une procédure d'installation de poste</span><ul class="tags"><li>Word</li></ul></summary>
-        <div class="mission-body">
-          <h5>Objectif</h5><p>Produire un document de référence décrivant pas à pas l'installation et la sécurisation d'un poste, pour les futurs stagiaires.</p>
-          <h5>Réalisations</h5><ul class="mission-list"><li>Structuration de mes notes en étapes numérotées</li><li>Ajout de copies d'écran commentées (BitLocker, rattachement à l'annuaire)</li><li>Relecture avec mon tuteur et intégration de ses corrections</li></ul>
-          <h5>Difficulté &amp; solution</h5><p>Il fallait trouver le bon niveau de détail : assez précis pour un stagiaire débutant, sans être trop long.</p>
-          <h5>Compétences développées</h5><p>Rédaction de documentation technique claire, transmission des connaissances.</p>
-        </div>
-      </details>
-    </div>
-
-    <div class="stage-bilan">
-      <h3>Bilan</h3>
-      <p><strong>Compétences techniques :</strong> installation et configuration sécurisée de postes Windows 11, gestion de tickets (Freshdesk), assistance niveau 1 en présentiel et à distance, gestion d'inventaire, administration Active Directory (comptes, groupes, OU, GPO), vérification de la synchronisation avec Microsoft Entra ID, rédaction de documentation technique.</p>
-      <p><strong>Compétences transversales :</strong> sens de l'organisation (suivi de plusieurs tickets en parallèle), communication avec des utilisateurs non techniques à l'écrit et à l'oral.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJETS ===== -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="section-title">Mes projets</h2>
-
-    <div class="cards-grid projects">
-      <article class="project-card">
-        <div class="project-visual">AD</div>
-        <div class="project-body">
-          <h3>Active Directory &amp; GPO</h3>
-          <p>Déploiement d'un domaine et de stratégies de groupe pour centraliser et sécuriser les postes.</p>
-          <ul class="tags"><li>Windows Server</li><li>Active Directory</li><li>GPO</li></ul>
-          <button class="link-btn" data-open="dlg-ad">En savoir plus…</button>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-visual">NET</div>
-        <div class="project-body">
-          <h3>Maintenance &amp; sécurisation du matériel réseau</h3>
-          <p>Maintenance de switchs/routeurs et durcissement de leur configuration et de leurs accès.</p>
-          <ul class="tags"><li>Cisco</li><li>VLAN</li><li>Sécurité</li></ul>
-          <button class="link-btn" data-open="dlg-net">En savoir plus…</button>
-        </div>
-      </article>
-
-      <article class="project-card project-card--empty">
-        <div class="project-visual">+</div>
-        <div class="project-body">
-          <h3>Prochain projet</h3>
-          <p>Emplacement réservé pour un futur projet.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== VEILLE ===== -->
-<section id="veille" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Veille technologique</h2>
-    <article class="veille-card">
-      <h3>Thème de ma veille : à définir</h3>
-      <p>Indique ici le sujet suivi (ex. actualités cybersécurité), les outils utilisés (flux RSS, sites spécialisés, newsletters) et la période de suivi.</p>
-      <h4>Conclusion de la veille</h4>
-      <p>À rédiger une fois la veille avancée : synthèse de ce que tu en retiens.</p>
-    </article>
-  </div>
-</section>
-
-<!-- ===== E5 / E6 ===== -->
-<section id="epreuves" class="section">
-  <div class="container">
-    <h2 class="section-title">Épreuves E5 &amp; E6</h2>
-    <p class="section-intro">Portefeuille de compétences professionnelles pour le jury du BTS SIO.</p>
-    <div class="cards-grid two">
-      <a class="exam-card" href="#"><h3>Épreuve E5</h3><p>Production et fourniture de services informatiques</p><span>Accéder →</span></a>
-      <a class="exam-card" href="#"><h3>Épreuve E6</h3><p>Cybersécurité des services informatiques</p><span>Accéder →</span></a>
-    </div>
-    <p class="note">Ces liens pointeront vers des pages dédiées, à créer plus tard.</p>
-  </div>
-</section>
-
-<!-- ===== CV ===== -->
-<section id="cv" class="section section-alt">
-  <div class="container cv-block">
+<!-- 5. VEILLE -->
+<section id="veille">
+  <h2>Veille technologique</h2>
+  <div class="two">
     <div>
-      <h2 class="section-title">Curriculum vitae</h2>
-      <p>Version PDF téléchargeable de mon CV.</p>
+      <p><strong>Sujet :</strong> les attaques par rançongiciel contre les PME et les mesures de prévention.</p>
+      <p><strong>Outils :</strong> Feedly (flux RSS), CERT-FR, ZATAZ, LinkedIn.</p>
+      <p>Lorem ipsum dolor sit amet : explique ta méthode (fréquence, tri, archivage).</p>
     </div>
-    <a href="assets/docs/cv-driss-bahammou.pdf" class="btn btn-primary" download>Télécharger le CV (PDF)</a>
+    <ul class="plain">
+      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 1</strong> – Titre de l'article (date). Résumé en deux lignes.</li>
+      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 2</strong> – Titre de l'article (date). Résumé en deux lignes.</li>
+      <li><i class="fa-regular fa-newspaper"></i> <strong>Axe de recherche</strong> – Zero Trust en PME.</li>
+    </ul>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2 class="section-title">Me contacter</h2>
-    <div class="contact-layout">
-      <div class="contact-cards">
-        <div class="contact-card"><h4>Email</h4><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></div>
-        <div class="contact-card"><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">linkedin.com/in/ton-profil</a></div>
-        <div class="contact-card"><h4>GitHub</h4><a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">github.com/ton-pseudo</a></div>
-      </div>
-      <form class="contact-form" action="https://formsubmit.co/ton.email@exemple.com" method="POST">
-        <label>Nom<input type="text" name="nom" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Message<textarea name="message" rows="4" required></textarea></label>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
-    </div>
+<!-- 6. CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="badges">
+    <span class="badge done"><i class="fa-solid fa-circle-check"></i> Pix – obtenu</span>
+    <span class="badge done"><i class="fa-solid fa-circle-check"></i> SecNumacadémie (ANSSI) – obtenu</span>
+    <span class="badge"><i class="fa-solid fa-hourglass-half"></i> Cisco CCNA – en cours</span>
+    <span class="badge"><i class="fa-solid fa-hourglass-half"></i> Microsoft AZ-900 – prévu</span>
   </div>
 </section>
 
+<!-- 7. CV : place ton fichier dans /assets/cv.pdf -->
+<section id="cv" class="band">
+  <h2>Curriculum vitae</h2>
+  <a class="btn" href="assets/cv.pdf" download><i class="fa-solid fa-download"></i> Télécharger mon CV (PDF)</a>
+</section>
+
+<!-- 8. CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="two">
+    <ul class="plain">
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:prenom.nom@email.fr">prenom.nom@email.fr</a></li>
+      <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <!-- Remplace YOUR_ID par ton identifiant Formspree (formspree.io) pour recevoir les messages -->
+    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <label>Nom<input name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
 </main>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>Driss Bahammou</h4>
-      <p>Étudiant en BTS SIO SISR, passionné par les infrastructures et la cybersécurité.</p>
-    </div>
-    <div>
-      <h4>Liens rapides</h4>
-      <ul><li><a href="#home">Accueil</a></li><li><a href="#projects">Projets</a></li><li><a href="#contact">Contact</a></li></ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul><li>ton.email@exemple.com</li><li>Ville, France</li></ul>
-    </div>
-  </div>
-  <p class="copyright">© <span id="year"></span> Driss Bahammou. Tous droits réservés.</p>
-</footer>
+<footer>© 2026 Prénom Nom – Portfolio BTS SIO SISR</footer>
 
-<!-- ===== Fenêtres de détail ===== -->
-<dialog id="dlg-skill" class="dlg"><div class="dlg-box"><button class="dlg-close" data-close>✕</button><h3 id="dlgSkillTitle"></h3><p id="dlgSkillText"></p></div></dialog>
+<!-- Fenêtre modale des projets -->
+<dialog id="modal"><button class="close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button><div id="modal-body"></div></dialog>
 
-<dialog id="dlg-ad" class="dlg"><div class="dlg-box">
-  <button class="dlg-close" data-close>✕</button>
-  <h3>Active Directory &amp; stratégies de groupe (GPO)</h3>
-  <dl>
-    <dt>Contexte</dt><dd>Mise en place d'un domaine Active Directory pour une infrastructure d'entreprise simulée.</dd>
-    <dt>Objectifs</dt><dd>Structurer l'annuaire (OU, comptes, groupes) et déployer des GPO pour homogénéiser et sécuriser les postes.</dd>
-    <dt>Technologies</dt><dd>Windows Server, Active Directory, GPO, DNS/DHCP.</dd>
-    <dt>Difficultés &amp; solutions</dt><dd>À détailler (blocages sur l'application des GPO, gpresult, gpupdate…).</dd>
-    <dt>Compétences développées</dt><dd>Administration d'annuaire, application de politiques de sécurité.</dd>
-  </dl>
-</div></dialog>
-
-<dialog id="dlg-net" class="dlg"><div class="dlg-box">
-  <button class="dlg-close" data-close>✕</button>
-  <h3>Maintenance &amp; sécurisation du matériel réseau</h3>
-  <dl>
-    <dt>Contexte</dt><dd>Intervention sur le parc réseau (switchs, routeurs, câblage) en atelier de professionnalisation.</dd>
-    <dt>Objectifs</dt><dd>Assurer le bon fonctionnement du matériel et limiter les risques liés aux accès et à la configuration.</dd>
-    <dt>Technologies</dt><dd>Switch/routeur, VLAN, câblage, sécurisation des accès.</dd>
-    <dt>Difficultés &amp; solutions</dt><dd>À détailler (incidents rencontrés, démarche de diagnostic).</dd>
-    <dt>Compétences développées</dt><dd>Diagnostic réseau, maintenance préventive, sécurité physique des équipements.</dd>
-  </dl>
-</div></dialog>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
