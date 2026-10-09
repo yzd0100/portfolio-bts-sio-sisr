@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prénom Nom – Portfolio BTS SIO SISR</title>
-<meta name="description" content="Portfolio d'un étudiant en BTS SIO option SISR, orienté cybersécurité.">
+<title>Portfolio BTS SIO SISR – Driss Bahammou</title>
+<meta name="description" content="Portfolio de Driss Bahammou, étudiant en BTS SIO option SISR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -12,31 +12,29 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- NAVIGATION : modifie les liens/ids ici si tu ajoutes une rubrique -->
+<!-- NAVIGATION : les liens #... pointent vers les sections de cette page, e5.html vers la page E5 -->
 <header class="nav">
-  <a class="logo" href="#accueil">P.Nom</a>
+  <a class="logo" href="#accueil">D.BAHAMMOU</a>
   <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
   <nav id="menu">
-    <a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#projets">Projets</a>
-    <a href="#veille">Veille</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    <a href="#apropos">À propos</a><a href="#certifications">Certifications</a><a href="#parcours">Parcours</a>
+    <a href="#projets">Projets</a><a href="#veille">Veille</a><a href="e5.html">E5</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
-<!-- 1. ACCUEIL -->
 <section id="accueil" class="hero">
   <div class="hero-text">
-    <p class="kicker">BTS SIO option SISR</p>
-    <h1>Je conçois et sécurise des infrastructures réseau.</h1>
-    <p>Étudiant en deuxième année, je m'oriente vers la cybersécurité : durcissement des systèmes, segmentation réseau et supervision. Lorem ipsum à remplacer par ta présentation.</p>
+    <p class="kicker">Étudiant en BTS SIO option SISR</p>
+    <h1>Driss Bahammou, futur expert en infrastructures et cybersécurité.</h1>
+    <p>Je déploie, configure et sécurise des systèmes et des réseaux. Ce portfolio présente mon parcours, mes réalisations et mon stage chez Neuro Swiss AI.</p>
     <div class="actions">
       <a class="btn" href="#projets">Voir mes projets</a>
+      <a class="btn ghost" href="e5.html">Accès E5</a>
       <a class="btn ghost" href="#contact">Me contacter</a>
     </div>
   </div>
-  <!-- Schéma réseau décoratif (SVG) : élément visuel signature -->
-  <svg class="topo" viewBox="0 0 320 260" role="img" aria-label="Schéma d'un réseau : routeur, commutateur et postes">
+  <svg class="topo" viewBox="0 0 320 260" role="img" aria-label="Schéma d'un réseau : routeur, commutateur et VLAN">
     <g class="links"><path d="M160 40V100M160 100L70 170M160 100L160 170M160 100L250 170M70 170V220M160 170V220M250 170V220"/></g>
     <g class="nodes">
       <rect x="130" y="10" width="60" height="30" rx="6"/><text x="160" y="30">Routeur</text>
@@ -49,83 +47,92 @@
   </svg>
 </section>
 
-<!-- 2. À PROPOS -->
 <section id="apropos">
-  <h2>À propos</h2>
-  <div class="two">
-    <p>Après un baccalauréat [à préciser], j'ai intégré le BTS SIO pour allier administration systèmes et réseaux. Lorem ipsum dolor sit amet, consectetur adipiscing elit : décris ici ton parcours, tes stages et ta motivation.</p>
-    <ul class="plain">
-      <li><i class="fa-solid fa-graduation-cap"></i> BTS SIO SISR – Lycée [Nom], 2024-2026</li>
-      <li><i class="fa-solid fa-bullseye"></i> Objectif : poursuivre vers un titre ou une licence en cybersécurité</li>
-      <li><i class="fa-solid fa-heart"></i> Centres d'intérêt : CTF, homelab, randonnée, photographie</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 3. COMPÉTENCES -->
-<section id="competences">
-  <h2>Compétences</h2>
-  <h3>Techniques</h3>
-  <div class="grid" id="tech"></div>
-  <h3>Transversales</h3>
-  <div class="grid">
-    <div class="card"><i class="fa-solid fa-people-group"></i><h4>Travail en équipe</h4><p>Projets menés en binôme, répartition des tâches.</p></div>
-    <div class="card"><i class="fa-solid fa-diagram-project"></i><h4>Gestion de projet</h4><p>Planification, suivi des tickets, documentation.</p></div>
-    <div class="card"><i class="fa-solid fa-comments"></i><h4>Communication</h4><p>Restitution orale, rédaction de procédures.</p></div>
-  </div>
-</section>
-
-<!-- 4. PROJETS : le contenu est dans script.js (tableau PROJECTS) -->
-<section id="projets">
-  <h2>Expériences et réalisations</h2>
-  <p class="lead">Clique sur une carte pour voir le détail : contexte, difficultés, solutions et compétences.</p>
-  <div class="grid" id="projects"></div>
-</section>
-
-<!-- 5. VEILLE -->
-<section id="veille">
-  <h2>Veille technologique</h2>
+  <h2>À propos de moi</h2>
   <div class="two">
     <div>
-      <p><strong>Sujet :</strong> les attaques par rançongiciel contre les PME et les mesures de prévention.</p>
-      <p><strong>Outils :</strong> Feedly (flux RSS), CERT-FR, ZATAZ, LinkedIn.</p>
-      <p>Lorem ipsum dolor sit amet : explique ta méthode (fréquence, tri, archivage).</p>
+      <p>Élève en deuxième année de BTS SIO option SISR au lycée Joseph-Marie Carriat, je me forme à l'administration des systèmes, aux réseaux et à la sécurité informatique. Mon objectif : poursuivre vers la cybersécurité.</p>
+      <p>Lors de mon stage chez Neuro Swiss AI, j'ai installé et sécurisé des postes, administré un annuaire Active Directory et assuré le support utilisateur.</p>
+      <a class="btn" href="assets/cv.pdf" download><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
     </div>
-    <ul class="plain">
-      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 1</strong> – Titre de l'article (date). Résumé en deux lignes.</li>
-      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 2</strong> – Titre de l'article (date). Résumé en deux lignes.</li>
-      <li><i class="fa-regular fa-newspaper"></i> <strong>Axe de recherche</strong> – Zero Trust en PME.</li>
-    </ul>
+    <div>
+      <h3>Centres d'intérêt</h3>
+      <ul class="plain">
+        <li><i class="fa-solid fa-cart-shopping"></i> E-commerce</li>
+        <li><i class="fa-solid fa-hand-fist"></i> Boxe anglaise</li>
+        <li><i class="fa-solid fa-user-shield"></i> Cybersécurité</li>
+      </ul>
+    </div>
   </div>
+  <h3>Mes compétences</h3>
+  <div class="grid" id="tech"></div>
 </section>
 
-<!-- 6. CERTIFICATIONS -->
+<!-- CERTIFICATIONS : la certification Azure a été supprimée -->
 <section id="certifications">
   <h2>Certifications</h2>
   <div class="badges">
     <span class="badge done"><i class="fa-solid fa-circle-check"></i> Pix – obtenu</span>
     <span class="badge done"><i class="fa-solid fa-circle-check"></i> SecNumacadémie (ANSSI) – obtenu</span>
     <span class="badge"><i class="fa-solid fa-hourglass-half"></i> Cisco CCNA – en cours</span>
-    <span class="badge"><i class="fa-solid fa-hourglass-half"></i> Microsoft AZ-900 – prévu</span>
   </div>
 </section>
 
-<!-- 7. CV : place ton fichier dans /assets/cv.pdf -->
-<section id="cv" class="band">
-  <h2>Curriculum vitae</h2>
-  <a class="btn" href="assets/cv.pdf" download><i class="fa-solid fa-download"></i> Télécharger mon CV (PDF)</a>
+<section id="parcours">
+  <h2>Mon parcours</h2>
+  <div class="two">
+    <div>
+      <h3>Formation</h3>
+      <div class="timeline">
+        <div class="card"><small>2025 – 2027</small><h4>BTS SIO option SISR</h4><p>Lycée Joseph-Marie Carriat, Bourg-en-Bresse. Solutions d'infrastructure, systèmes et réseaux.</p></div>
+        <div class="card"><small>Avant 2025</small><h4>Baccalauréat [à préciser]</h4><p>Établissement à compléter.</p></div>
+      </div>
+    </div>
+    <div>
+      <h3>Expérience</h3>
+      <div class="timeline">
+        <div class="card"><small>14 juin – 14 juillet 2026</small><h4>Stagiaire support et systèmes</h4><p>Neuro Swiss AI, Genève. Maintien en condition opérationnelle du parc : postes Windows 11, Active Directory, Freshdesk.</p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 8. CONTACT -->
+<section id="projets">
+  <h2>Mes projets et réalisations</h2>
+  <p class="lead">Clique sur une carte : contexte, objectifs, difficultés, solutions et compétences.</p>
+  <div class="grid" id="projects"></div>
+</section>
+
+<section id="veille">
+  <h2>Veille technologique</h2>
+  <div class="two">
+    <div>
+      <p><strong>Sujet :</strong> les attaques par rançongiciel contre les PME et leur prévention.</p>
+      <p><strong>Outils :</strong> Feedly (flux RSS), CERT-FR, LinkedIn.</p>
+      <p>Lorem ipsum : décris ta méthode (fréquence, tri, archivage) et ta conclusion de veille.</p>
+    </div>
+    <ul class="plain">
+      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 1</strong> – titre, date, résumé en deux lignes.</li>
+      <li><i class="fa-regular fa-newspaper"></i> <strong>Synthèse 2</strong> – titre, date, résumé en deux lignes.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="e5" class="band">
+  <h2>Épreuve E5</h2>
+  <p>Production et fourniture de services informatiques : tableau de synthèse de mes réalisations de stage.</p>
+  <a class="btn" href="e5.html">Accéder à l'épreuve E5</a>
+</section>
+
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Me contacter</h2>
   <div class="two">
     <ul class="plain">
-      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:prenom.nom@email.fr">prenom.nom@email.fr</a></li>
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:bahammou.driss69@gmail.com">bahammou.driss69@gmail.com</a></li>
       <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
-    <!-- Remplace YOUR_ID par ton identifiant Formspree (formspree.io) pour recevoir les messages -->
+    <!-- Remplace YOUR_ID par ton identifiant Formspree (formspree.io) -->
     <form action="https://formspree.io/f/YOUR_ID" method="POST">
       <label>Nom<input name="name" required></label>
       <label>Email<input type="email" name="email" required></label>
@@ -136,11 +143,8 @@
 </section>
 </main>
 
-<footer>© 2026 Prénom Nom – Portfolio BTS SIO SISR</footer>
-
-<!-- Fenêtre modale des projets -->
+<footer>© 2026 Driss Bahammou – Portfolio BTS SIO SISR</footer>
 <dialog id="modal"><button class="close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button><div id="modal-body"></div></dialog>
-
 <script src="script.js"></script>
 </body>
 </html>
