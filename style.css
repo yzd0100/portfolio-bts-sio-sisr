@@ -99,3 +99,13 @@ footer { text-align: center; padding: 2rem; color: var(--muted); border-top: 1px
   * { animation: none !important; scroll-behavior: auto !important; }
   .links path { stroke-dashoffset: 0; }
 }
+
+/* ===== AJOUTS v2 : parcours et tableau E5 ===== */
+.timeline { display: grid; gap: 1rem; }
+.timeline .card h4 { margin-bottom: .2rem; }
+.timeline small { color: var(--accent); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); }
+th, td { padding: .7rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: var(--accent-2); }
+.top { padding: 2rem 5vw 0; max-width: 1100px; margin: auto; }
